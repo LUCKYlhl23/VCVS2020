@@ -56,8 +56,6 @@ void CMFC3231View::OnDraw(CDC* pDC)
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
 		return;
-	
-	//pDC->Rectangle(pDoc->cr);
 	// TODO: 在此处为本机数据添加绘制代码
 	SetTimer(pDoc->di, 1000, NULL);
 	if (pDoc->set)
@@ -65,6 +63,11 @@ void CMFC3231View::OnDraw(CDC* pDC)
 		CClientDC dc(this);
 		CRect ct;
 		GetClientRect(&ct);
+		//CBrush cbrush;
+		//int color;
+		//color = RGB(pDoc->red, pDoc->green, pDoc->blue);
+		//cbrush.CreateSolidBrush(color);
+		//dc.SelectObject(&cbrush);
 		dc.Ellipse(ct.right / 2 - pDoc->di, ct.bottom / 2 - pDoc->di, ct.right / 2 + pDoc->di, ct.bottom / 2 + pDoc->di);
 	}
 
@@ -99,6 +102,9 @@ void CMFC3231View::OnTimer(UINT_PTR nIDEvent)
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	CMFC3231Doc* pDoc = GetDocument();
 	pDoc->di += 1;
+//	pDoc->red += 2;
+	//pDoc->green += 3;
+	//pDoc->blue += 4;
 	Invalidate();
 	CView::OnTimer(nIDEvent);
 }
@@ -112,8 +118,13 @@ void CMFC3231View::OnDrawcircle()
 	CClientDC dc(this);
 	CRect ct;
 	GetClientRect(&ct);
+	//CBrush cbrush;
+	//int color;
+	//color = RGB(pDoc->red, pDoc->green, pDoc->blue);
+	//cbrush.CreateSolidBrush(color);
+	//dc.SelectObject(&cbrush);
 	dc.Ellipse(ct.right / 2 - pDoc->di, ct.bottom / 2 - pDoc->di, ct.right / 2 + pDoc->di, ct.bottom / 2 + pDoc->di);
-
+	//左上角坐标和右下角坐标
 }
 
 

@@ -1,28 +1,27 @@
 ﻿
-// MFC323-1Doc.h: CMFC3231Doc 类的接口
+// MFC323-2Doc.h: CMFC3232Doc 类的接口
 //
 
 
 #pragma once
 
 
-class CMFC3231Doc : public CDocument
+class CMFC3232Doc : public CDocument
 {
 protected: // 仅从序列化创建
-	CMFC3231Doc() noexcept;
-	DECLARE_DYNCREATE(CMFC3231Doc)
+	CMFC3232Doc() noexcept;
+	DECLARE_DYNCREATE(CMFC3232Doc)
 
 // 特性
 public:
-	
-	int di;
-	bool set;
-	//int red;
-	//int green;
-	// int blue;
+
 // 操作
 public:
-
+	int di;
+	bool set;
+	int red;
+	int green;
+	int blue;
 // 重写
 public:
 	virtual BOOL OnNewDocument();
@@ -34,7 +33,7 @@ public:
 
 // 实现
 public:
-	virtual ~CMFC3231Doc();
+	virtual ~CMFC3232Doc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;

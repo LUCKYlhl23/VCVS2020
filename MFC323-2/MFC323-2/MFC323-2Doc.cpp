@@ -1,5 +1,5 @@
 ﻿
-// MFC323-1Doc.cpp: CMFC3231Doc 类的实现
+// MFC323-2Doc.cpp: CMFC3232Doc 类的实现
 //
 
 #include "pch.h"
@@ -7,10 +7,10 @@
 // SHARED_HANDLERS 可以在实现预览、缩略图和搜索筛选器句柄的
 // ATL 项目中进行定义，并允许与该项目共享文档代码。
 #ifndef SHARED_HANDLERS
-#include "MFC323-1.h"
+#include "MFC323-2.h"
 #endif
 
-#include "MFC323-1Doc.h"
+#include "MFC323-2Doc.h"
 
 #include <propkey.h>
 
@@ -18,34 +18,31 @@
 #define new DEBUG_NEW
 #endif
 
-// CMFC3231Doc
+// CMFC3232Doc
 
-IMPLEMENT_DYNCREATE(CMFC3231Doc, CDocument)
+IMPLEMENT_DYNCREATE(CMFC3232Doc, CDocument)
 
-BEGIN_MESSAGE_MAP(CMFC3231Doc, CDocument)
+BEGIN_MESSAGE_MAP(CMFC3232Doc, CDocument)
 END_MESSAGE_MAP()
 
 
-// CMFC3231Doc 构造/析构
+// CMFC3232Doc 构造/析构
 
-CMFC3231Doc::CMFC3231Doc() noexcept
+CMFC3232Doc::CMFC3232Doc() noexcept
 {
 	// TODO: 在此添加一次性构造代码
-
-	
 	di = 0;
 	set = false;
-	//red = 0;
-	//green = 0;
-	//blue = 0;
-	
+	red = 0;
+	green = 0;
+	blue = 0;
 }
 
-CMFC3231Doc::~CMFC3231Doc()
+CMFC3232Doc::~CMFC3232Doc()
 {
 }
 
-BOOL CMFC3231Doc::OnNewDocument()
+BOOL CMFC3232Doc::OnNewDocument()
 {
 	if (!CDocument::OnNewDocument())
 		return FALSE;
@@ -59,9 +56,9 @@ BOOL CMFC3231Doc::OnNewDocument()
 
 
 
-// CMFC3231Doc 序列化
+// CMFC3232Doc 序列化
 
-void CMFC3231Doc::Serialize(CArchive& ar)
+void CMFC3232Doc::Serialize(CArchive& ar)
 {
 	if (ar.IsStoring())
 	{
@@ -76,7 +73,7 @@ void CMFC3231Doc::Serialize(CArchive& ar)
 #ifdef SHARED_HANDLERS
 
 // 缩略图的支持
-void CMFC3231Doc::OnDrawThumbnail(CDC& dc, LPRECT lprcBounds)
+void CMFC3232Doc::OnDrawThumbnail(CDC& dc, LPRECT lprcBounds)
 {
 	// 修改此代码以绘制文档数据
 	dc.FillSolidRect(lprcBounds, RGB(255, 255, 255));
@@ -97,7 +94,7 @@ void CMFC3231Doc::OnDrawThumbnail(CDC& dc, LPRECT lprcBounds)
 }
 
 // 搜索处理程序的支持
-void CMFC3231Doc::InitializeSearchContent()
+void CMFC3232Doc::InitializeSearchContent()
 {
 	CString strSearchContent;
 	// 从文档数据设置搜索内容。
@@ -107,7 +104,7 @@ void CMFC3231Doc::InitializeSearchContent()
 	SetSearchContent(strSearchContent);
 }
 
-void CMFC3231Doc::SetSearchContent(const CString& value)
+void CMFC3232Doc::SetSearchContent(const CString& value)
 {
 	if (value.IsEmpty())
 	{
@@ -127,19 +124,19 @@ void CMFC3231Doc::SetSearchContent(const CString& value)
 
 #endif // SHARED_HANDLERS
 
-// CMFC3231Doc 诊断
+// CMFC3232Doc 诊断
 
 #ifdef _DEBUG
-void CMFC3231Doc::AssertValid() const
+void CMFC3232Doc::AssertValid() const
 {
 	CDocument::AssertValid();
 }
 
-void CMFC3231Doc::Dump(CDumpContext& dc) const
+void CMFC3232Doc::Dump(CDumpContext& dc) const
 {
 	CDocument::Dump(dc);
 }
 #endif //_DEBUG
 
 
-// CMFC3231Doc 命令
+// CMFC3232Doc 命令
