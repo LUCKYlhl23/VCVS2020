@@ -98,7 +98,7 @@ void CMFC4View::OnLButtonDown(UINT nFlags, CPoint point)
 	int a= cr.Width() / 2;
 	int b = cr.Height() / 2;
 	CClientDC dc(this);
-	//int r = rand() % 50 + 5;
+	int r = rand() % 50 + 5;
 	dc.Ellipse(a-r, b-r, a+r, b+r);
 	
 	CView::OnLButtonDown(nFlags, point);
