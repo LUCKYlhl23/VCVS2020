@@ -105,9 +105,9 @@ void CMFC3301View::OnFileOpen()
 		CRect rt;
 		//GetDlgItem(IDC_STATIC)->
 			GetClientRect(&rt);
-			sx = (rt.Width() - img.GetWidth()) / 2;
-			sy = (rt.Height() - img.GetHeight()) / 2;
-	/*	float rt_ra = 1.0*rt.Width() / rt.Height();
+			//sx = (rt.Width() - img.GetWidth()) / 2;
+			//sy = (rt.Height() - img.GetHeight()) / 2;
+		float rt_ra = 1.0*rt.Width() / rt.Height();
 		float img_ta = 1.0*img.GetWidth() / img.GetHeight();
 		if (rt_ra > img_ta)
 		{
@@ -122,9 +122,9 @@ void CMFC3301View::OnFileOpen()
 			h = w / img_ta;
 			sx = 0;
 			sy = (rt.Height() - h) / 2;
-		}*/
+		}
 		
 		}
-		img.Draw(dc.m_hDC, sx, sy,img.GetWidth(),img.GetHeight());
+		img.Draw(dc.m_hDC,sx,sy, w, h);
 	}
 }
