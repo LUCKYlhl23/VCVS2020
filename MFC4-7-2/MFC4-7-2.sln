@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC4-7-2", "MFC4-7-2\MFC4-7-2.vcxproj", "{B17AFC28-B026-45D6-8D86-FECE98FAEE03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Debug|x64.ActiveCfg = Debug|x64
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Debug|x64.Build.0 = Debug|x64
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Debug|x86.ActiveCfg = Debug|Win32
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Debug|x86.Build.0 = Debug|Win32
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Release|x64.ActiveCfg = Release|x64
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Release|x64.Build.0 = Release|x64
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Release|x86.ActiveCfg = Release|Win32
+		{B17AFC28-B026-45D6-8D86-FECE98FAEE03}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9AF91D7-129D-495C-9957-597CCA7BC2BF}
+	EndGlobalSection
+EndGlobal
