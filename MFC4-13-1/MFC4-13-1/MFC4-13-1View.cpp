@@ -120,7 +120,7 @@ void CMFC4131View::OnLButtonUp(UINT nFlags, CPoint point)
 
 void CMFC4131View::OnPaint()
 {
-	CPaintDC dc(this); 
+	CClientDC dc(this); 
 	rect.top = mMouse.y - 15;
 	rect.left = mMouse.x - 15;
 	rect.bottom = rect.top + 50;
