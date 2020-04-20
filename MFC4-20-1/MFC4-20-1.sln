@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC4-20-1", "MFC4-20-1\MFC4-20-1.vcxproj", "{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Debug|x64.ActiveCfg = Debug|x64
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Debug|x64.Build.0 = Debug|x64
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Debug|x86.ActiveCfg = Debug|Win32
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Debug|x86.Build.0 = Debug|Win32
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Release|x64.ActiveCfg = Release|x64
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Release|x64.Build.0 = Release|x64
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Release|x86.ActiveCfg = Release|Win32
+		{D35B1EAC-CF6F-4E6C-BD8D-183FB74E8217}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72C97015-4C8D-4CB9-8EA9-C3AF4F20B244}
+	EndGlobalSection
+EndGlobal
